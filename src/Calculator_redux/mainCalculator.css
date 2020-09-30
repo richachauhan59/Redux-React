@@ -1,0 +1,13 @@
+button {
+    background-color: rgb(158, 119, 119);
+    margin: 1%;
+    padding: 2%;
+    border-radius: 7px;
+    color: cornsilk;
+}
+input{
+    margin: 20px;
+    width: 80%;
+    height: 40px;
+    border-radius: 6px;
+}

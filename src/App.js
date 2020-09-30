@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import {createStore} from 'redux'
-import MainCounter from './Counter_Redux/mainCounter'
+// import MainCounter from './Counter_Redux/mainCounter'
+import MainCalculator from './Calculator_redux/mainCalculator'
 
 function App() {
   return (
     <div className="App">
-      <MainCounter/>
+      {/* <MainCounter/> */}
+      <MainCalculator/>
     </div>
   );
 }
