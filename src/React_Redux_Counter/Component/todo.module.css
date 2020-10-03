@@ -1,0 +1,25 @@
+.todo {
+    width: 250px;
+    background-color: orange;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .complete {
+    width: 250px;
+    background-color: green;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .todo button {
+    border: none;
+    border-radius: 15px;
+    padding: 6px;
+  }

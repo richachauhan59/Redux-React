@@ -1,6 +1,6 @@
 import React from "react";
 import {incrementCounter, decrementCounter } from './actions'
-import connect from './connect'
+import{ connect} from 'react-redux'
 import store from "./store";
 
 
@@ -14,7 +14,6 @@ const Counter = props => {
       <button onClick={incrementCounter } >add</button>
       <button onClick={decrementCounter} >reduce</button>
     </>
-  
   )
   
 }

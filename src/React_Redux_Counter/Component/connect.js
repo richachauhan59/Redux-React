@@ -1,35 +1,37 @@
-import React from "react";
-import  {CounterContext} from "./reduxProvider";
+// import React from "react";
+// import  {CounterContext} from "./reduxProvider";
 
-function connect(mapStateToProps, mapDispatchToProps) {
+// function connect(mapStateToProps, mapDispatchToProps) {
   
-  return function(WrapperComponent) {
+//   return function(WrapperComponent) {
 
-    class ConnectWrapper extends React.Component {
+//     class ConnectWrapper extends React.Component {
 
-      componentDidMount() {
-        const { store } = this.context;
-        this.unsubscribe = store.subscribe(() => this.forceUpdate());
-      }
+//       componentDidMount() {
+//         const { store } = this.context;
+//         this.unsubscribe = store.subscribe(() => this.forceUpdate());
+//       }
 
-      componentWillUnmount() {
-        this.unsubscribe();
-      }
+//       componentWillUnmount() {
+//         this.unsubscribe();
+//       }
 
-      render() {
-        const { store } = this.context;
-        return (
-          <WrapperComponent
-            {...mapStateToProps(store.getState())}
-            {...mapDispatchToProps(store.dispatch)}
-          />
-        );
-      }
-    }
+//       render() {
+//         const { store } = this.context;
+//         return (
+//           <WrapperComponent
+//             {...mapStateToProps(store.getState())}
+//             {...mapDispatchToProps(store.dispatch)}
+//           />
+//         );
+//       }
+//     }
 
-    ConnectWrapper.contextType = CounterContext;
-    return ConnectWrapper
-  };
-}
+//     ConnectWrapper.contextType = CounterContext;
+//     return ConnectWrapper
+//   };
+// }
 
-export default connect;
+// export default connect;
+
+
